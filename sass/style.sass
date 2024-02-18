@@ -1,10 +1,42 @@
 @import "normalizes.scss"
 @import "resets.scss"
 
+$blue-color: hsla(206, 100%, 50%, 1)
+
 *
     box-sizing: border-box
+
 
 .container
     max-width: 1140px
     margin: 0 auto
     position: relative
+
+.first-section
+    height: 100vh //??
+    &__nav-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: hsla(29, 100%, 61%, 1) 
+ 
+.nav-menu
+    width: 50%
+    &__list
+        display: flex 
+        flex-direction: row  
+        justify-content: space-between
+        span
+            font-weight: bold
+
+.input-bar
+    max-width: 12.5%
+    border: 1px solid
+    border-radius: 20px 
+    background: $blue-color
+    height: 22px
+    &:hover
+        background: hsla(206, 100%, 46%, 1) 
+    
+.logo
+    width: 8%
